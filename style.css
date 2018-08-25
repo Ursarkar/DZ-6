@@ -1,0 +1,57 @@
+@font-face {
+    font-family: TNR;
+    src: url(tnr.ttf); 
+    }
+    /*задание 1 через ем сделать размер strong 220px*/
+    div.ex1 strong{font-size: 1.25em}
+    
+    /*задание 2 сделать одинаковый шрифт*/
+    div.ex2 a,u,abbr{ text-decoration:none;
+    color: black}
+    div.ex2 em,i{font-style:normal}
+    div.ex2 strong{font-weight: normal}
+    div.ex2 q{quotes: none;}
+    div.ex2 mark{background: white}
+    div.ex2 big{font-size:inherit}
+    div.ex2 code,small,kbd{font-family: TNR;
+    font-size:inherit}
+    
+    
+    /*задание 3 рамка*/
+    .ex3{border-style: dotted;
+    height: 300px;
+    background-color: rgb(182, 182, 182);
+    background-image:  url('image1.jpg');
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: right center}
+    
+    /*задание 4 рамка*/
+    .ex4{
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+    height: 300px;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 8px red;
+    background-image:  url('image1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover}
+    
+    /*задание 5 маркер в номер*/
+    ul.list1 li{list-style-type: upper-roman}
+    ul.list2 {
+    list-style-type: none;
+    counter-reset:  item;
+    text-indent: -20px;}
+    ul.list2 li::before{
+    content: counter(item) ')';
+    counter-increment: item;
+    padding-right: 5px;}
+    
+    
+    /*задание 6 номер в маркер*/
+    ol.list1 li{list-style: square;}
+    ol.list2{list-style:none;
+    text-indent: -18px; }
+    ol.list2 li::before{
