@@ -32,7 +32,10 @@
     border-color: red;
     border-width: 3px;
     height: 300px;
-    box-shadow: 0 0 0 5px #fff, 0 0 0 8px red;
+    outline-offset: -11px;
+    outline-style: dashed;
+    outline-width: 3px;
+    
     background-image:  url('image1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -54,4 +57,4 @@
     ol.list1 li{list-style: square;}
     ol.list2{list-style:none;
     text-indent: -18px; }
-    ol.list2 li::before{
+    ol.list2 li::before{content: '*';padding-right: 10px;}
